@@ -1,0 +1,47 @@
+body{
+    background-color: lightgray;
+}
+
+div.plato{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;  /*Esto alinea verticalmente a sus hijos */
+    justify-content: center;   /*Esto alinea horizontalmente a sus hijos */
+    background-color: white;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    box-shadow: 20px 20px 20px gray;
+}
+
+div.pancho{
+    display: flex;        
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.pan{
+    width: 300px;
+    height: 50px;
+    background-color: orange;
+}
+
+div.panSuperior{
+    border-radius: 50px 50px 25px 25px;
+}
+
+div.panInferior{
+    border-radius: 25px 25px 50px 50px;
+}
+
+div.salchicha{
+    width: 350px;
+    height: 50px;
+    background-color: red;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
