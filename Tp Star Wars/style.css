@@ -1,0 +1,27 @@
+.imperio{
+    background-color: red;
+}
+
+.rebeldes{
+    background-color: blue;
+}
+
+.soldados{
+    border: 2px dashed black;
+    letter-spacing: 0.5em;
+}
+
+.listaApoyo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.naves{
+    text-transform: uppercase;
+}
+
+.droides{
+    text-align: center;
+}
