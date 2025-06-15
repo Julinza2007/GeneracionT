@@ -5,7 +5,7 @@ if(esferaDisponible){
     document.querySelector('h3').remove();
 
     let img = document.querySelector('img');
-    img.src = './SynShenLong.png';
+    img.src = './SynShenlong.png';
     
     
     let h2 = document.querySelector('h2');
