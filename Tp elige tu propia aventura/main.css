@@ -1,0 +1,126 @@
+body{
+    background-color: #333;
+    color: white;
+    font-family: Consolas, "Courier New", Courier, monospace;
+}
+
+h1{
+    text-align: center;
+}
+
+span.aclaracion{
+    font-size: 0.6em;
+}
+
+
+img#esfera:hover{
+    animation: rotar 2s infinite linear;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+div.container{
+    text-align: center;
+}
+
+div.container div.tarjeta{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.container div.tarjeta nav.opciones{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.container div.tarjeta nav.opciones a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+div.container div.tarjeta nav.opciones a span.opcion{
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+div.container div.tarjeta nav.opciones a:hover{
+    background-color: white;
+    color: black;
+}
+
+a.volver{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid red;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+img.escenarios{
+    display: block;
+    margin: 0 auto;
+}
+
+img#karin:hover {
+    animation: rebotar 1s infinite;
+}
+
+@keyframes rebotar{
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    20% {
+        transform: translateY(-10px) rotate(10deg);
+    }
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+    70% {
+        transform: translateY(-10px) rotate(-10deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+img#kamisama{
+    display: none;
+}
+
+button#btnEntrenamiento {
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    border: 1px solid blue;
+    color: black;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+button#btnEntrenamiento:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
