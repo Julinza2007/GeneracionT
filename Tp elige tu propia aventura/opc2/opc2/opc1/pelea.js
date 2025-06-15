@@ -9,7 +9,6 @@ if(entrenado){
     
     let img = document.querySelector("img");
     img.src = "./taoPaiPaiVencido.jpg";
-    img.style.width = '15%';
 
     let h2 = document.querySelector("h2");
     h2.textContent = "Tao Pai Pai resistió bastante aunque gracias a tu esfuerzo en el entrenamiento, lograste derrotarlo y conseguir la victoria.";
@@ -18,6 +17,6 @@ if(entrenado){
 
     let a = document.querySelector(".volver");
     a.removeAttribute("onclick");    
-    a.textContent = "Volver a donde la tribu Karinga."
+    a.textContent = "Volver a la tribu Karinga."
     a.href = "../karinga.html";
 }

@@ -124,3 +124,53 @@ button#btnEntrenamiento:hover {
     background-color: black;
     color: white;
 }
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.1em;
+        padding: 0 10px;
+    }
+
+    span.aclaracion {
+        font-size: 0.6em;
+    }
+
+    div.container div.tarjeta {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    div.container div.tarjeta nav.opciones a {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 0.95em;
+        padding: 8px;
+    }
+
+    div.container div.tarjeta nav.opciones {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    img.escenarios{
+        width: 50%;
+        height: auto;
+    }
+
+    a.volver {
+        width: 70%;
+        margin: 15px auto;
+        font-size: 0.9em;
+    }
+
+    button#btnEntrenamiento {
+        width: 50%;
+        font-size: 0.95em;
+    }
+}

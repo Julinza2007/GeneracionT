@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular jubilación</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Calculadora de jubilación.</h1>
+        <form onsubmit="handleSubmit(event)">
+            <input type="number" name="edad" placeholder="Edad">
+            <select name="genero">
+                <option value="">Seleccione género</option>
+                <option value="Mujer">Femenino</option>
+                <option value="Hombre">Masculino</option>
+            </select>
+            <input type="submit" value="Calcular">
+        </form>
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
