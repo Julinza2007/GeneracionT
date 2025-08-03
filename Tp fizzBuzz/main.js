@@ -1,42 +1,35 @@
+let p = document.createElement("p");
+document.body.append(p);
 function handleSubmit(e){
     e.preventDefault();
+    p.textContent = "";
     let string1 = e.target.string1.value;
     let string2 = e.target.string2.value;
-    let fizz = e.target.fizz.value;
-    let buzz = e.target.buzz.value;
-    console.log(string1, string2, fizz, buzz);
+    let fizz = +e.target.fizz.value;
+    let buzz = +e.target.buzz.value;
+    let limite = +e.target.limite.value;
+
+    if(limite >= 0 && limite <= 100){
+        for(i=1; i <= limite; i++){
+            if(i % fizz == 0 && i % buzz == 0){
+                p.textContent += `, ${string1 + string2}`;
+            }
+            else if(i % fizz == 0){
+                p.textContent += `, ${string1}`;
+            }
+            else if(i % buzz == 0){
+                p.textContent += `, ${string2}`;
+            }
+            else{
+                if(i == 1){
+                    p.textContent += i;
+                }
+                else{
+                    p.textContent += `, ${i}`;
+                }
+            }
+        }
+
+    }
+
 }
-
-
-
-for(i=0; i < 100; i++){
-    if (i == )
-}
-
-
-
-/*
-Para completar este ejercicio, deberás:
-1. Lograr que fizzBuzz2 devuelva un String con los números separados
-por comas.
-2. Mejorar la Función para que el usuario pueda decidir hasta qué
-número tiene que contar fizzBuzz2.
-3. Mejorar la Función para que el usuario pueda
-ingresar fizz_num y buzz_num para que la sustitución de palabras
-ocurra en los números múltiplos de los nuevos argumentos de
-entrada (en vez de solo 3 y 5).
-
-
-Desafío FizzBuzz
-1. cuenta del 1 al 100
-    Muestra números secuenciales en la consola.
-2. Múltiplos de 3: "Fizz"
-    Sustituye cada número divisible por 3.
-
-3. Múltiplos de 5: "Buzz"
-    Sustituye cada número divisible por 5.
-
-4. Múltiplos de 3 y 5: "FizzBuzz"
-    Combina ambas palabras para múltiplos comunes.
-
-*/
