@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+}
+
+form {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos del formulario */
+}
+
+input{
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background: #4285f4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background: #3367d6;
+}
+
+p {
+    font-size: 2em;
+    color: white;
+}
